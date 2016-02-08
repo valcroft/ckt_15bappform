@@ -94,52 +94,34 @@ padding-top: 20%;
 
 .main-square {
       width: 100%;
-  
-    //margin: 0 auto;
-  //  position: relative;
     background-color: black;
 }
 
 /* Grids */
 .gridster {
     margin: 0 auto;
-  //  position: relative;
-    
-   width: 960px;
-     
-    
-   // height: 100%;
- 
-    
-
+    position: relative;    
+   width: 720px;
     background-color: yellow;
   
 }
 
-.gridster ul {
-  //  position: relative;
-   //margin: 0 auto;
-    box-sizing: border-box;
+.gridster >  ul {
+
+   
     list-style-type: none;
-//width: 960px;
- //   height: 960px;
+    width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto auto;
     
-  //  padding: 0;
+  
     background-color: red;
     opacity: 0.5;
 }
-.gridster >li {
 
-    background-color: white;
-     list-style-type: none;
- 
-    
-   
-}
 
-.gridster li {
+.gridster   li {
+      list-style-type: none;
     background: #FFF;
     cursor: pointer;
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
