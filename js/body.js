@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
-    $('div.main-square').hide();
-    $('div.centered-text').hide();
+   // $('div.main-square').hide();
+ //   $('div.centered-text').hide();
     
     var i =0;
     
