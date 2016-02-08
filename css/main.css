@@ -92,41 +92,77 @@ font-size: 2em;
 padding-top: 20%;
 }
 
+<<<<<<< HEAD
+=======
 .main-square {
       width: 100%;
+  
+    //margin: 0 auto;
+  //  position: relative;
     background-color: black;
 }
+>>>>>>> parent of 2579156... onting cleaning pero still shit
 
-/* Grids */
+
 .gridster {
     margin: 0 auto;
-    position: relative;    
-   width: 720px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    width: 960px;
+}
+.gridster .gs-w {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+=======
+=======
+>>>>>>> parent of 2579156... onting cleaning pero still shit
+  //  position: relative;
+    
+   width: 960px;
+     
+    
+   // height: 100%;
+ 
+    
+
     background-color: yellow;
   
 }
 
-.gridster >  ul {
-
-   
+.gridster ul {
+  //  position: relative;
+   //margin: 0 auto;
+    box-sizing: border-box;
     list-style-type: none;
-    width: 100%;
+//width: 960px;
+ //   height: 960px;
     padding: 0;
-    margin: 0 auto auto;
+    margin: 0;
     
-  
+  //  padding: 0;
     background-color: red;
     opacity: 0.5;
 }
+.gridster >li {
 
-
-.gridster   li {
-      list-style-type: none;
-    background: #FFF;
-    cursor: pointer;
-    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background-color: white;
+     list-style-type: none;
+ 
+    
+   
 }
+
+.gridster li {
+    background: #FFF;
+>>>>>>> parent of 2579156... onting cleaning pero still shit
+    cursor: pointer;
+}
+.gridster .player {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.gridster .gs-w.try {
+    background-image: url("../img/sprite.png");
+    ba
 
 
 /* End of Grids */
