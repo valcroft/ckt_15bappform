@@ -51,7 +51,14 @@ body {
 
     
 }
-
+::selection {
+  background-color: #FFF; /* WebKit/Blink Browsers */
+    color: #003471;
+}
+::-moz-selection {
+  background-color: #FFF; /* Gecko Browsers */
+    color: #003471;
+}
 
 /*End of Initial Intro*/
 
@@ -75,18 +82,7 @@ body {
   height: 100%;
 }*/
 /* End of Square*/
-.square {
-    border: 5px solid red;
-    text-align: center;
-    width: 50vw;
-    height: 50vw;
-    left: 50%;
-  }
 
-.content {
-font-size: 2em;
-padding-top: 20%;
-}
 
 .main-square {
       width: 100%;
@@ -241,7 +237,7 @@ div.text-overlay {
     height: 100%;
      font-family: sans-serif;
     color: white;
-    font-size: 4em;
+   // font-size: 4em;
     /*visibility: hidden;*/
     align-self: center;
     display: none;
@@ -253,7 +249,7 @@ div.text-overlay {
   left: 50%;
    transform: translate(-50%, -50%);
   font-family: "Segoe UI", Verdana, Sans-Serif;
-  font-size: 1.5em;
+  font-size: 4em;
   text-align:center;
     display: none;
 }
@@ -270,3 +266,117 @@ div.text-overlay {
 }
 
 /*End of Intro*/
+
+/* Form inputs */
+
+
+
+div#over-firstname {
+    background-color: #003471;  
+    z-index: 998;
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+     font-family: sans-serif;
+  align-self: center;
+    /*visibility: hidden;*/
+    
+    display: none;
+}
+
+.question {
+    margin:auto;  position: absolute;
+   top: 45%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+  font-family: "Segoe UI", Verdana, Sans-Serif;
+    color: white;
+    font-size: 4em;
+  text-align:center;
+    align-self: center;
+    display: none;
+    z-index: 999;
+}
+
+.qandinput {
+        margin:auto;  position: absolute;
+   top: 45%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+  font-family: "Segoe UI", Verdana, Sans-Serif;
+    color: white;
+    font-size: 4em;
+  text-align:center;
+    align-self: center;
+    display: none;
+    z-index: 999;
+
+}
+
+.qandinput_question {
+    display:block;
+     margin: auto;
+}
+.input_holder {
+    display: block;
+   color: black;
+     margin: auto;
+}
+.submit_button {
+    display: block;
+  
+    font-size: 2em;
+  //  background-color: black;
+    //opacity: 0.9;
+  margin: auto;
+   
+}
+.fa-check-circle {
+     cursor: pointer;
+}
+
+.confirmation {
+    display: none;
+}
+
+.notif-first {
+   // display:none;
+ //   visibility: hidden;
+  //  opacity: 0;
+}
+
+input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 3px solid #FFF;
+    background: transparent;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+    color: white;
+   // height: 4em;
+    z-index: 1001;
+}
+
+input alt {
+    color:white;
+}
+
+textarea{
+    resize:none;
+    overflow: hidden;
+}
+
+/* End of Form Inputs */

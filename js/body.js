@@ -30,6 +30,7 @@ jQuery(document).ready(function($) {
         widget_base_dimensions: [200, 200]
     });
     
+  
     if (i ==0) {
       //  $('div.notif-first').show(250);
         $('div#intro-first').show(0);
@@ -38,24 +39,24 @@ jQuery(document).ready(function($) {
             $('div.intro-cover').hide(0);
           });
         
-        $('div.notif-first').animate({"font-size": "2em"},
+        $('div.notif-first').animate({"font-size": "5em"},
             {duration:2000, queue: true,
             complete: function() { 
         }});
          $( 'div.text-overlay' ).colorFade( [26,113,215]); 
 
-         $('div.notif-first').animate({"font-size": "1.75em"},
+         $('div.notif-first').animate({"font-size": "4em"},
                 {duration:2000, queue: true,
             complete: function() { /* Animation complete */  
             $('div.notif-first').hide(0); 
                       $('div.notif-second').show(0);
-                       $('div.notif-second').animate({"font-size": "2em"},
+                       $('div.notif-second').animate({"font-size": "5em"},
                         {duration:2000, queue: true,
                         complete: function() { 
                     }});
                      $( 'div.text-overlay' ).colorFade( [26,113,215]); 
 
-                     $('div.notif-second').animate({"font-size": "1.75em"},
+                     $('div.notif-second').animate({"font-size": "4em"},
                             {duration:2000, queue: true,
                         complete: function() { /* Animation complete */  
                             $('div.notif-second').hide(0); 
@@ -75,6 +76,30 @@ jQuery(document).ready(function($) {
         console.log("inside i==1");
     $('.rc-11').click(function() {	
         if (i_firstname ==0){          
+                      //  $('div.intro-cover').show(0);
+                        $('div#over-firstname').show(0);
+                        $('div.main-square').hide(0);
+            
+                        $( '.q-firstname' ).show( 250, function() {
+                            // Animation complete.
+                         //   $('div.intro-cover').hide(0);
+                          });
+            
+                        $('.q-firstname').animate({"font-size": "5em"},
+                            {duration:2000, queue: true,
+                            complete: function() { 
+                        }});
+                         $( 'div#over-firstname' ).colorFade( [26,113,215]); 
+            
+                        $('.q-firstname').animate({"font-size": "4em"},
+                                {duration:2000, queue: true,
+                            complete: function() { /* Animation complete */  
+                            $('div.q-firstname').hide(0); 
+                            $('div.qi-firstname').show(0);
+                        }});
+                                     
+                
+               
             
             i_firstname++;
             $(this).addClass('unlocked');
@@ -146,12 +171,32 @@ jQuery(document).ready(function($) {
       
     });
     
+    $('.fa-check-circle').hover(  function() {
+      $(this).animate({"font-size": "+=0.25em"});
+      }, function() {
+       $(this).animate({"font-size": "-=0.25em"});
+      } );
+    
+    $('.check-firstname').click(function() {
+       firstname = $('#input_firstname').val();
+        console.log(firstname);
+        $('div.qi-firstname').hide(0); 
+            $('div.main-square').show(0);
+            $('div#over-firstname').hide(0);
+     /*    $('.rc-11').animate({"box-shadow": "0px 0px 20px #fff"},
+                            {duration:2000, queue: true,
+                            complete: function() { 
+                        }});
+        $('.rc-11').animate({"box-shadow": "0px"},
+                            {duration:2000, queue: true,
+                            complete: function() { 
+                        }});*/
+    
+    });
+    
+        
+        
  
-        
-        
-      
-    
-    
    //  var gridster = $('.gridster ul').gridster().data('gridster');
     /*
     $('.rc-11').click(function() {	
