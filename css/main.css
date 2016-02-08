@@ -140,9 +140,9 @@ width: 660px;
    // background-color: red;
     //opacity: 0.5;
 }
-.gridster >li {
-
-    background-color: white;
+.gridster li {
+    // dark blue = #003471
+   
      list-style-type: none;
  
     
@@ -150,14 +150,56 @@ width: 660px;
 }
 
 .gridster li {
-    background: #FFF;
+    background-color: #003471;
     cursor: pointer;
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    opacity: 0.9;
 }
 
 #upper-right {
     background-color: green;
 }
 
+.rc-11 {
+    background-image: url('../img/2-2.gif');
+    background-size: 200px 200px;    
+}
+.rc-12 {
+    background-image: url('../img/0-1.gif');
+    background-size: 200px 200px;    
+}
+.rc-13 {
+    background-image: url('../img/1-1.gif');
+    background-size: 200px 200px;    
+}
+.rc-21 {
+    background-image: url('../img/0-2.gif');
+    background-size: 200px 200px;    
+}
+.rc-22 {
+    background-image: url('../img/2-1.gif');
+    background-size: 200px 200px;    
+}
+.rc-23 {
+    background-image: url('../img/1-2.gif');
+    background-size: 200px 200px;    
+}
+.rc-31 {
+    background-image: url('../img/2-0.gif');
+    background-size: 200px 200px;    
+}
+.rc-32 {
+    background-image: url('../img/1-0.gif');
+    background-size: 200px 200px;    
+}
+.rc-33 {
+    background-image: url('../img/0-0.gif');
+    background-size: 200px 200px;    
+}
+/*
+.locked {
+    background-color: black;
+}
+*/
 /* End of Grids */
