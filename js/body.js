@@ -245,7 +245,8 @@ $( "li" ).mouseup(function() {
             }
             if ((k<=2)||(json_string==complete_order)) {
                 console.log("NAG-MATCH!!!!");
-                
+                $('div.gridster').hide(0);
+                $('div.endingpic').show(0);
                 complete_puzzle = 0;
             }
             k = 0;
