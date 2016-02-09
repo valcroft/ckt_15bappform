@@ -317,7 +317,21 @@ div#over-firstname {
 
 }
 
-.qandinput_question {
+/*
+For each form
+frame1 
+    .question
+        q-firstname
+frame2
+    .qandinput
+        qi-firstname
+frame3
+    .question
+        c-firstname
+*/
+
+
+.qandinput .question {
     display:block;
      margin: auto;
 }

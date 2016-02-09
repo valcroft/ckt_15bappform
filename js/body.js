@@ -24,6 +24,8 @@ jQuery(document).ready(function($) {
     var fblink = "";
     var bonus = "";
     
+    var complete_puzzle = 0;
+    
     
     $(".gridster ul").gridster({
         widget_margins: [10, 10],
@@ -33,7 +35,7 @@ jQuery(document).ready(function($) {
   
     if (i ==0) {
       //  $('div.notif-first').show(250);
-        $('div#intro-first').show(0);
+        $("div#intro-first").show(0);
         $( "div.notif-first" ).show( 250, function() {
             // Animation complete.
             $('div.intro-cover').hide(0);
@@ -73,7 +75,7 @@ jQuery(document).ready(function($) {
     /* In Game Proper */             
     } 
  
-        console.log("inside i==1");
+    console.log("inside i==1");
     $('.rc-11').click(function() {	
         if (i_firstname ==0){          
                       //  $('div.intro-cover').show(0);
@@ -180,24 +182,107 @@ jQuery(document).ready(function($) {
     $('.check-firstname').click(function() {
        firstname = $('#input_firstname').val();
         console.log(firstname);
+        //$('div.c-firstname').show(0);
         $('div.qi-firstname').hide(0); 
+        $( '.c-firstname' ).show( 250, function() {
+                            // Animation complete.
+                        
+          });
+
+        $('.c-firstname').animate({"font-size": "5em"},
+            {duration:2000, queue: true,
+            complete: function() { 
+        }});
+         $( 'div#over-firstname' ).colorFade( [26,113,215]); 
+
+        $('.c-firstname').animate({"font-size": "4em"},
+                {duration:2000, queue: true,
+            complete: function() { /* Animation complete */  
+            $('div.c-firstname').hide(0); 
+                
             $('div.main-square').show(0);
             $('div#over-firstname').hide(0);
-     /*    $('.rc-11').animate({"box-shadow": "0px 0px 20px #fff"},
-                            {duration:2000, queue: true,
-                            complete: function() { 
-                        }});
-        $('.rc-11').animate({"box-shadow": "0px"},
-                            {duration:2000, queue: true,
-                            complete: function() { 
-                        }});*/
+       //     $('div.qi-firstname').show(0);
+        }});
+
+         //   $('div.main-square').show(0);
+        //    $('div#over-firstname').hide(0);
+
     
     });
+var complete_order = '[{"col":3,"row":3,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":1,"row":3,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":2,"row":3,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1}]';
+    console.log("complete_order");
+    console.log(complete_order);
+$( "li" ).mouseup(function() {
+    if(complete_puzzle ==0) {
+        if ($('li').hasClass('unlocked') == true) {
+           console.log("mouseup");
+                    var gridster = $(".gridster ul").gridster({
+                    serialize_params: function($w, wgd) {
+                        return {
+                            x: wgd.col,
+                            y: wgd.row,
+                            width: wgd.size_x,
+                            height: wgd.size_y,
+                            id: $($w).attr('id'),
+                            class: $($w).attr('class')
+                        }
+                    }
+                }).data('gridster');
+
+                var json = JSON.stringify(gridster.serialize());
+                    console.log(json);
+            var json_string = "";
+            json_string = json;
+            console.log("json_string");
+            console.log(json_string);
+            console.log(complete_order);
+            var k =0;
+            for (j = 0; j< complete_order.length; j++) {
+                if (complete_order[j] != json_string[j] ) {
+                    k++;
+                }
+            }
+            if ((k<=2)||(json_string==complete_order)) {
+                console.log("NAG-MATCH!!!!");
+                
+                complete_puzzle = 0;
+            }
+            k = 0;
+        }
+    }
+  
+  });
     
-        
-        
- 
-   //  var gridster = $('.gridster ul').gridster().data('gridster');
+    console.log("testing prop");
+    console.log($('.rc-31').attr( "data-row" ));
+     console.log($('.rc-31').attr( "data-col" ));
+    var tile_33_row = $('.rc-11').attr("data-row");
+    var tile_33_col = $('.rc-11').attr("data-col");
+    console.log("11 row");
+    console.log(tile_33_row);
+    console.log("11 col");
+    console.log(tile_33_col);
+   if((tile_33_row == 3) && (tile_33_col == 3) ) {
+       console.log("entered state");
+   }
+      
+var gridster = $(".gridster ul").gridster({
+    serialize_params: function($w, wgd) {
+        return {
+            x: wgd.col,
+            y: wgd.row,
+            width: wgd.size_x,
+            height: wgd.size_y,
+            id: $($w).attr('id'),
+            class: $($w).attr('class')
+        }
+    }
+}).data('gridster');
+
+var json = JSON.stringify(gridster.serialize());
+    console.log(json);
+   //  var gridst)er = $('.gridster ul').gridster().data('gridster');
     /*
     $('.rc-11').click(function() {	
         $(this).removeClass('locked');   
