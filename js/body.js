@@ -87,6 +87,8 @@ if(!("ontouchstart" in window)){
     console.log("inside i==1");
     $('.rc-11').click(function() {	
         if (i_firstname ==0){          
+            //224bc0
+                 $('div#over-firstname').css("background-color", "#224bc0");
                       //  $('div.intro-cover').show(0);
                         $('div#over-firstname').show(0);
                         $('div.main-square').hide(0);
@@ -100,7 +102,7 @@ if(!("ontouchstart" in window)){
                             {duration:2000, queue: true,
                             complete: function() { 
                         }});
-                         $( 'div#over-firstname' ).colorFade( [26,113,215]); 
+                         $( 'div#over-firstname' ).colorFade( [74,116,238]); 
             
                         $('.q-firstname').animate({"font-size": "4em"},
                                 {duration:2000, queue: true,
@@ -124,7 +126,7 @@ if(!("ontouchstart" in window)){
     
      $('.rc-21').click(function() {	
         if (i_lastname ==0){
-            
+              $('div#over-lastname').css("background-color", "#494949");
               //  $('div.intro-cover').show(0);
                         $('div#over-lastname').show(0);
                         $('div.main-square').hide(0);
@@ -138,7 +140,7 @@ if(!("ontouchstart" in window)){
                             {duration:2000, queue: true,
                             complete: function() { 
                         }});
-                         $( 'div#over-lastname' ).colorFade( [26,113,215]); 
+                         $( 'div#over-lastname' ).colorFade( [110,110,110]); 
             
                         $('.q-lastname').animate({"font-size": "4em"},
                                 {duration:2000, queue: true,
@@ -157,6 +159,7 @@ if(!("ontouchstart" in window)){
      $('.rc-31').click(function() {	
         if (i_studentnum ==0){
               //  $('div.intro-cover').show(0);
+             $('div#over-studentnum').css("background-color", "#c0253c");
                         $('div#over-studentnum').show(0);
                         $('div.main-square').hide(0);
             
@@ -169,7 +172,7 @@ if(!("ontouchstart" in window)){
                             {duration:2000, queue: true,
                             complete: function() { 
                         }});
-                         $( 'div#over-studentnum' ).colorFade( [26,113,215]); 
+                         $( 'div#over-studentnum' ).colorFade( [212,58,80]); 
             
                         $('.q-studentnum').animate({"font-size": "4em"},
                                 {duration:2000, queue: true,
@@ -189,6 +192,7 @@ if(!("ontouchstart" in window)){
      $('.rc-12').click(function() {	
         if (i_course ==0){
               //  $('div.intro-cover').show(0);
+             $('div#over-studentnum').css("background-color", "#ffb11a");
                         $('div#over-course').show(0);
                         $('div.main-square').hide(0);
             
@@ -201,7 +205,7 @@ if(!("ontouchstart" in window)){
                             {duration:2000, queue: true,
                             complete: function() { 
                         }});
-                         $( 'div#over-course' ).colorFade( [26,113,215]); 
+                          $( 'div#over-course' ).colorFade( [255,198,88]); 
             
                         $('.q-course').animate({"font-size": "4em"},
                                 {duration:2000, queue: true,
@@ -220,7 +224,8 @@ if(!("ontouchstart" in window)){
 /* Reason */     
      $('.rc-22').click(function() {	
         if (i_reason ==0){
-             
+             //#003471
+               $('div#over-reason').css("background-color", "#003471");
                      $('div#over-reason').show(0);
                         $('div.main-square').hide(0);
             
@@ -251,6 +256,8 @@ if(!("ontouchstart" in window)){
 /* Witty */     
      $('.rc-32').click(function() {
         if (i_witty ==0){
+            //6cce2a
+             $('div#over-witty').css("background-color", "#6cce2a");
               //  $('div.intro-cover').show(0);
                         $('div#over-witty').show(0);
                         $('div.main-square').hide(0);
@@ -264,7 +271,7 @@ if(!("ontouchstart" in window)){
                             {duration:2000, queue: true,
                             complete: function() { 
                         }});
-                         $( 'div#over-witty' ).colorFade( [26,113,215]); 
+                         $( 'div#over-witty' ).colorFade( [140,234,77]); 
             
                         $('.q-witty').animate({"font-size": "4em"},
                                 {duration:2000, queue: true,
@@ -283,7 +290,7 @@ if(!("ontouchstart" in window)){
      $('.rc-13').click(function() {	
         if (i_contactnum ==0){
               //  $('div.intro-cover').show(0);
-            $('div#over-contactnum').css("background-color", "#ac1a2f");
+            $('div#over-contactnum').css("background-color", "#c0253c");
                           $('div#over-contactnum').show(0);
                         $('div.main-square').hide(0);
             
@@ -314,6 +321,8 @@ if(!("ontouchstart" in window)){
 /* Fb link */    
      $('.rc-23').click(function() {	
         if (i_fblink ==0){
+            // #55284e
+             $('div#over-fblink').css("background-color", "#55284e");
               //  $('div.intro-cover').show(0);
                          $('div#over-fblink').show(0);
                         $('div.main-square').hide(0);
@@ -327,7 +336,7 @@ if(!("ontouchstart" in window)){
                             {duration:2000, queue: true,
                             complete: function() { 
                         }});
-                         $( 'div#over-fblink' ).colorFade( [26,113,215]); 
+                         $( 'div#over-fblink' ).colorFade( [133,66,123]); 
             
                         $('.q-fblink').animate({"font-size": "4em"},
                                 {duration:2000, queue: true,
@@ -346,6 +355,7 @@ if(!("ontouchstart" in window)){
      $('.rc-33').click(function() {	
         if (i_bonus ==0){
               //  $('div.intro-cover').show(0);
+            $('div#over-bonus').css("background-color", "#f5d313");
                           $('div#over-bonus').show(0);
                         $('div.main-square').hide(0);
             
@@ -358,7 +368,7 @@ if(!("ontouchstart" in window)){
                             {duration:2000, queue: true,
                             complete: function() { 
                         }});
-                         $( 'div#over-bonus' ).colorFade( [26,113,215]); 
+                         $( 'div#over-bonus' ).colorFade( [245,219,73]); 
             
                         $('.q-bonus').animate({"font-size": "4em"},
                                 {duration:2000, queue: true,
@@ -382,7 +392,7 @@ if(!("ontouchstart" in window)){
     $('.check-firstname').click(function() {
        firstname = $('#input_firstname').val();
         console.log(firstname);
-       
+       if(firstname!=""){
         $('div.qi-firstname').hide(0); 
         $( '.c-firstname' ).show( 250, function() {
                             // Animation complete.
@@ -393,7 +403,7 @@ if(!("ontouchstart" in window)){
             {duration:2000, queue: true,
             complete: function() { 
         }});
-         $( 'div#over-firstname' ).colorFade( [26,113,215]); 
+        $( 'div#over-firstname' ).colorFade( [74,116,238]); 
 
         $('.c-firstname').animate({"font-size": "4em"},
                 {duration:2000, queue: true,
@@ -404,13 +414,13 @@ if(!("ontouchstart" in window)){
             $('div#over-firstname').hide(0);
 
         }});
-
+    }
     });
    /*Check last name */ 
     $('.check-lastname').click(function() {
        lastname = $('#input_lastname').val();
         console.log(lastname);
-       
+       if (lastname!="") {
         $('div.qi-lastname').hide(0); 
         $( '.c-lastname' ).show( 250, function() {
                             // Animation complete.
@@ -421,7 +431,8 @@ if(!("ontouchstart" in window)){
             {duration:2000, queue: true,
             complete: function() { 
         }});
-         $( 'div#over-lastname' ).colorFade( [26,113,215]); 
+         $( 'div#over-lastname' ).colorFade( [110,110,110]); 
+             
 
         $('.c-lastname').animate({"font-size": "4em"},
                 {duration:2000, queue: true,
@@ -432,14 +443,14 @@ if(!("ontouchstart" in window)){
             $('div#over-lastname').hide(0);
 
         }});
-
+    }
     });
     
     /*Check studentnum */
        $('.check-studentnum').click(function() {
        studentnum = $('#input_studentnum').val();
         console.log(studentnum);
-       
+       if (studentnum!=""){
         $('div.qi-studentnum').hide(0); 
         $( '.c-studentnum' ).show( 250, function() {
                             // Animation complete.
@@ -450,7 +461,7 @@ if(!("ontouchstart" in window)){
             {duration:2000, queue: true,
             complete: function() { 
         }});
-         $( 'div#over-studentnum' ).colorFade( [26,113,215]); 
+       $( 'div#over-course' ).colorFade( [254,191,71]); 
 
         $('.c-studentnum').animate({"font-size": "4em"},
                 {duration:2000, queue: true,
@@ -461,14 +472,14 @@ if(!("ontouchstart" in window)){
             $('div#over-studentnum').hide(0);
 
             }});
-
+       }
        });
     
     /*Check course */
        $('.check-course').click(function() {
        course = $('#input_course').val();
         console.log(course);
-       
+       if (course!=""){
         $('div.qi-course').hide(0); 
         $( '.c-course' ).show( 250, function() {
                             // Animation complete.
@@ -479,7 +490,7 @@ if(!("ontouchstart" in window)){
             {duration:2000, queue: true,
             complete: function() { 
         }});
-         $( 'div#over-course' ).colorFade( [26,113,215]); 
+      $( 'div#over-course' ).colorFade( [255,198,88]); 
 
         $('.c-course').animate({"font-size": "4em"},
                 {duration:2000, queue: true,
@@ -490,13 +501,13 @@ if(!("ontouchstart" in window)){
             $('div#over-course').hide(0);
 
             }});
-
+       }
        });
        /*Check reason */
        $('.check-reason').click(function() {
        reason = $('#input_reason').val();
         console.log(reason);
-       
+       if (reason!="") {
         $('div.qi-reason').hide(0); 
         $( '.c-reason' ).show( 250, function() {
                             // Animation complete.
@@ -518,14 +529,14 @@ if(!("ontouchstart" in window)){
             $('div#over-reason').hide(0);
 
             }});
-
+       }
        });
     
      /*Check witty */
        $('.check-witty').click(function() {
        witty = $('#input_witty').val();
         console.log(witty);
-       
+       if (witty!=""){
         $('div.qi-witty').hide(0); 
         $( '.c-witty' ).show( 250, function() {
                             // Animation complete.
@@ -536,7 +547,7 @@ if(!("ontouchstart" in window)){
             {duration:2000, queue: true,
             complete: function() { 
         }});
-         $( 'div#over-witty' ).colorFade( [26,113,215]); 
+        $( 'div#over-witty' ).colorFade( [140,234,77]);
 
         $('.c-witty').animate({"font-size": "4em"},
                 {duration:2000, queue: true,
@@ -547,14 +558,14 @@ if(!("ontouchstart" in window)){
             $('div#over-witty').hide(0);
 
             }});
-
+       }
        });
     
       /*Check contactnum */
        $('.check-contactnum').click(function() {
        contactnum = $('#input_contactnum').val();
         console.log(contactnum);
-       
+       if (contactnum!="") {
         $('div.qi-contactnum').hide(0); 
         $( '.c-contactnum' ).show( 250, function() {
                             // Animation complete.
@@ -565,7 +576,7 @@ if(!("ontouchstart" in window)){
             {duration:2000, queue: true,
             complete: function() { 
         }});
-         $( 'div#over-contactnum' ).colorFade( [26,113,215]); 
+         $( 'div#over-contactnum' ).colorFade( [212,58,80]);  
 
         $('.c-contactnum').animate({"font-size": "4em"},
                 {duration:2000, queue: true,
@@ -576,36 +587,37 @@ if(!("ontouchstart" in window)){
             $('div#over-contactnum').hide(0);
 
             }});
-
+       }
        });
     
       /*Check fblink */
        $('.check-fblink').click(function() {
        fblink = $('#input_fblink').val();
+           console.log("fblink");
         console.log(fblink);
-       
-        $('div.qi-fblink').hide(0); 
-        $( '.c-fblink' ).show( 250, function() {
-                            // Animation complete.
-                        
-          });
+       if (fblink != "") {
+            $('div.qi-fblink').hide(0); 
+            $( '.c-fblink' ).show( 250, function() {
+                                // Animation complete.
 
-        $('.c-fblink').animate({"font-size": "5em"},
-            {duration:2000, queue: true,
-            complete: function() { 
-        }});
-         $( 'div#over-fblink' ).colorFade( [26,113,215]); 
+              });
 
-        $('.c-fblink').animate({"font-size": "4em"},
+            $('.c-fblink').animate({"font-size": "5em"},
                 {duration:2000, queue: true,
-            complete: function() { /* Animation complete */  
-            $('div.c-fblink').hide(0); 
-                
-            $('div.main-square').show(0);
-            $('div#over-fblink').hide(0);
-
+                complete: function() { 
             }});
+              $( 'div#over-fblink' ).colorFade( [133,66,123]);  
 
+            $('.c-fblink').animate({"font-size": "4em"},
+                    {duration:2000, queue: true,
+                complete: function() { /* Animation complete */  
+                $('div.c-fblink').hide(0); 
+
+                $('div.main-square').show(0);
+                $('div#over-fblink').hide(0);
+
+                }});
+       }
        });
     
       /*Check bonus */
@@ -623,7 +635,7 @@ if(!("ontouchstart" in window)){
             {duration:2000, queue: true,
             complete: function() { 
         }});
-         $( 'div#over-bonus' ).colorFade( [26,113,215]); 
+          $( 'div#over-bonus' ).colorFade( [245,219,73]);
 
         $('.c-bonus').animate({"font-size": "4em"},
                 {duration:2000, queue: true,
@@ -637,6 +649,17 @@ if(!("ontouchstart" in window)){
 
        });
 
+    function enterInputs() {
+         $('input[name="entry.1642166138"]').val(firstname);
+         $('input[name="entry.1482043039"]').val(lastname);
+         $('input[name="entry.865912683"]').val(studentnum);
+         $('input[name="entry.1252433"]').val(course);
+         $('input[name="entry.1107706378"]').val(reason);
+         $('input[name="entry.768637950"]').val(witty);
+         $('input[name="entry.1215942749"]').val(contactnum);
+         $('input[name="entry.1593529229"]').val(fblink);
+    }
+    
     function showFinalEnding() {
                       $("div#ending-first").show(0);
         $( "div.notif-first-end" ).show( 250, function() {
@@ -719,14 +742,14 @@ var complete_order = '[{"col":3,"row":3,"size_x":1,"size_y":1},{"col":3,"row":1,
                 $('div.gridster').hide(0);
                 $('div.endingpic').show(0);
                 complete_puzzle =1;
-                
+                 enterInputs();
                   $('div.endingpic').animate({"opacity": "0"},
-            {duration:4000, queue: true,
+            {duration:5000, queue: true,
             complete: function() { 
         }});
                   $( "#submit_button" ).click();
                 
-                  setTimeout(showFinalEnding, 3500);
+                  setTimeout(showFinalEnding, 5000);
                   i=1;
                 console.log("After i=1");
                 console.log(i);
@@ -783,12 +806,14 @@ var complete_order = '[{"col":3,"row":3,"size_x":1,"size_y":1},{"col":3,"row":1,
                 $('div.gridster').hide(0);
                 $('div.endingpic').show(0);
                 $('div.endingpic').animate({"opacity": "0"},
-            {duration:4000, queue: true,
+            {duration:5000, queue: true,
             complete: function() { 
         }});
+                
+                enterInputs();
                 complete_puzzle =1;
                    $( "#submit_button" ).click();
-                 setTimeout(showFinalEnding, 3500);
+                 setTimeout(showFinalEnding, 5000);
     
                   i=1;
                 console.log("After i=1");

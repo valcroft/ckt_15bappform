@@ -44,9 +44,13 @@ form {
 /*End of Google Form Hidden*/
 
 /*Initial Intro*/
-body {
+html {
     background-color: black;
-    background-image: url('../img/texture__dusty_wood_by_tzolkin.jpg');
+     background-image: url('../img/texture__dusty_wood_by_tzolkin.jpg');
+}
+body {
+    //background-color: black;
+   // background-image: url('../img/texture__dusty_wood_by_tzolkin.jpg');
     font-size:10px;
 
     
@@ -157,7 +161,7 @@ width: 660px;
     background-size: 200px 200px;    
 }
 .rc-13 {
-    background-image: url('../img/6.png');
+    background-image: url('../img/1-1.gif');
     background-size: 200px 200px;    
 }
 .rc-21 {
@@ -247,7 +251,7 @@ li.rc-21.locked{
     background-size: 200px 200px;    
 }
 .rc-33.locked {
-    background-color: #002776;
+    background-color: #f5d313;
     background-image: url('../img/9.png');
     background-size: 200px 200px;    
 }
@@ -461,32 +465,6 @@ textarea{
     overflow: hidden;
 }
 
-div#over-firstname {
-    background-color: ;
-}
-div#over-lastname {
-    background-color: ;
-}
-div#over-studentnum {
-    background-color: ;
-}
-div#over-course {
-    background-color: ;
-}
-div#over-reason {
-    background-color: ;
-}
-div#over-witty {
-    background-color: ;
-}
-div#over-contactnum {
-    background-color:#ac1a2f ;
-}
-div#over-fblink {
-    background-color: ;
-}
-div#over-bonus {
-    background-color: ;
-}
+
 
 /* End of Form Inputs */
