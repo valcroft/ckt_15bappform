@@ -43,29 +43,16 @@ if(!("ontouchstart" in window)){
   
     if (i ==0) {
       //  $('div.notif-first').show(250);
-    //    $("div#intro-first").show(0);
-   /*     $( "div.notif-first" ).show( 250, function() {
+        $("div#intro-first").show(0);
+        $( "div.notif-first" ).show( 250, function() {
             // Animation complete.
             $('div.intro-cover').hide(0);
           });
-        $("div.notif-first").css("opacity", "0");
-        $("div.notif-first").show(0);
+        
         $('div.notif-first').animate({"font-size": "5em"},
             {duration:2000, queue: true,
             complete: function() { 
-        }}); */
-         /*
-        $("div.notif-first").show(0);
-         $("div.notif-first").css("opacity", "0");
-          $('div.notif-first').animate({"opacity": "1"},
-            {duration:5000, queue: true,
-            complete: function() { 
-                $('div.intro-cover').hide(0);
-        }}); */
-        
-        $("div.notif-first").fadeIn(2000, function(){
-            
-        });
+        }});
          $( 'div.text-overlay' ).colorFade( [26,113,215]); 
 
          $('div.notif-first').animate({"font-size": "4em"},
@@ -756,13 +743,11 @@ var complete_order = '[{"col":3,"row":3,"size_x":1,"size_y":1},{"col":3,"row":1,
                 $('div.endingpic').show(0);
                 complete_puzzle =1;
                  enterInputs();
-         /*        $('div.endingpic').animate({"opacity": "0"},
+                  $('div.endingpic').animate({"opacity": "0"},
             {duration:5000, queue: true,
             complete: function() { 
-        }}); */
-                   $( "#submit_button" ).click();
-                  $('div.endingpic').fadeOut(5000);
-               
+        }});
+                  $( "#submit_button" ).click();
                 
                   setTimeout(showFinalEnding, 5000);
                   i=1;
