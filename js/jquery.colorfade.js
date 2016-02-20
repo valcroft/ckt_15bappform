@@ -46,7 +46,7 @@ $( '#element' ).colorFade( [255, 253, 196] );
 		
 		var settings = $.extend({
 			
-			duration	: 2000,			// (int)	How long it should take to fade the colors
+			duration	: 1250,			// (int)	How long it should take to fade the colors
 			cb		: $.noop,		// (function)	A callback function to be fired when fading is complete
 			prop		: 'backgroundColor',	// (sring)	The CSS property whose color we are fading (defaults to backgroundColor)
 			flash		: true			// (bool)	Whether we are just flashing the color and we should revert to the original when we're done
@@ -68,7 +68,7 @@ $( '#element' ).colorFade( [255, 253, 196] );
 			// Create a dummy element to animate so we can use a step function (don't insert element into DOM)
 			$( '<div />' ).animate({ 'width' : 100 }, {
 				
-				duration	: ( settings.flash ) ? 2000 : settings.duration,
+				duration	: ( settings.flash ) ? 1250 : settings.duration,
 				easing		: 'swing',
 				
 				// Fade the colors in the step function

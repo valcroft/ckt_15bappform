@@ -466,5 +466,37 @@ textarea{
 }
 
 
+#lastdetails {
+    font-size: 0.75em;
+}
+
 
 /* End of Form Inputs */
+
+/*
+#autocomplete {
+    margin: 20px auto;
+    display: block;
+    width: 250px;
+    height: 50px;
+    background-color: gray;
+    color: darkgray;
+   align-content: center;
+  //line-height: 3em;
+   font-family: "Segoe UI", Verdana, Sans-Serif;
+    font-size: 3em;
+     opacity: 0.9;
+      box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+      border: 10px solid darkgray;
+
+    display: table;
+   // position: absolute;
+}
+
+#spancom {
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+} */
